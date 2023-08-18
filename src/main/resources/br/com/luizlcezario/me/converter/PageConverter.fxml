@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #121812;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.luizlcezario.me.converter.PageConverterViewController">
+   <children>
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #121812;">
+         <children>
+            <ChoiceBox fx:id="toConvertChoiceBox" layoutX="12.0" prefWidth="150.0" />
+            <TextField fx:id="toConvert" layoutY="30.0" style="-fx-border-width: 0; -fx-border-color: #ff0000;" />
+            <Label fx:id="errorConvert" layoutX="87.0" layoutY="60.0" />
+         </children>
+      </Pane>
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #121812;" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="-&gt; Converter -&gt;" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="1.0" layoutY="26.0" mnemonicParsing="false" onAction="#doConvertion" prefHeight="37.0" prefWidth="119.0" style="-fx-background-color: #001824; -fx-border-color: white;" text="Converter" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #121812;">
+         <children>
+            <ChoiceBox fx:id="toRecivetChoiceBox" layoutX="12.0" prefWidth="150.0" />
+            <TextField fx:id="toRecive" layoutY="30.0" />
+            <Label layoutX="87.0" layoutY="60.0" />
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</HBox>
